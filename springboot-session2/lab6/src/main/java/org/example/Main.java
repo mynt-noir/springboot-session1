@@ -13,5 +13,8 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+
+        Product product = new Product(1L,"Coffee", 200);
+        System.out.println(product.hashCode());
     }
 }
