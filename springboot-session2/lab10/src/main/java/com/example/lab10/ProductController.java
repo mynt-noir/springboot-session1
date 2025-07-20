@@ -33,6 +33,7 @@ public class ProductController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    
     @PostMapping("/products")
     @ResponseStatus(HttpStatus.CREATED)
     public Product createProduct(@RequestBody Product newProduct) {
