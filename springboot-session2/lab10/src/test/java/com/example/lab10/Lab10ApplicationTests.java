@@ -1,10 +1,10 @@
-package com.example.lab8;
+package com.example.lab10;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Lab8ApplicationTests {
+class Lab10ApplicationTests {
 
 	@Test
 	void contextLoads() {
