@@ -293,7 +293,6 @@ class TodoExercisesTest {
              eq("Animal Health Alert"),
              contains("1")
          );
-
          verify(animalRepository, times(1)).findById(1L);
     }
 } 
