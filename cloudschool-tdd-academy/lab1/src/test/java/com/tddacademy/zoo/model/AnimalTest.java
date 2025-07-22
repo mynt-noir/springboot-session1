@@ -63,19 +63,19 @@ class AnimalTest {
         // 3. Verify the exception message is "Animal name cannot be null or empty"
         
         // Your code here:
-        // Long id = 1L;
-        // String name = null;
-        // String species = "Lion";
-        // String breed = "African Lion";
-        // LocalDate dateOfBirth = LocalDate.of(2020, 5, 15);
-        // Double weight = 180.5;
-        // String healthStatus = "Healthy";
-        //
-        // IllegalArgumentException exception = assertThrows(
-        //     IllegalArgumentException.class,
-        //     () -> new Animal(id, name, species, breed, dateOfBirth, weight, healthStatus)
-        // );
-        // assertEquals("Animal name cannot be null or empty", exception.getMessage());
+         Long id = 1L;
+         String name = null;
+         String species = "Lion";
+         String breed = "African Lion";
+         LocalDate dateOfBirth = LocalDate.of(2020, 5, 15);
+         Double weight = 180.5;
+         String healthStatus = "Healthy";
+
+         IllegalArgumentException exception = assertThrows(
+             IllegalArgumentException.class,
+             () -> new Animal(id, name, species, breed, dateOfBirth, weight, healthStatus)
+         );
+         assertEquals("Animal name cannot be null or empty", exception.getMessage());
     }
 
     @Test
@@ -85,21 +85,20 @@ class AnimalTest {
         // 1. Create test data with species = null
         // 2. Use assertThrows to test that creating an Animal with null species throws IllegalArgumentException
         // 3. Verify the exception message is "Animal species cannot be null or empty"
-        
-        // Your code here:
-        // Long id = 1L;
-        // String name = "Simba";
-        // String species = null;
-        // String breed = "African Lion";
-        // LocalDate dateOfBirth = LocalDate.of(2020, 5, 15);
-        // Double weight = 180.5;
-        // String healthStatus = "Healthy";
-        //
-        // IllegalArgumentException exception = assertThrows(
-        //     IllegalArgumentException.class,
-        //     () -> new Animal(id, name, species, breed, dateOfBirth, weight, healthStatus)
-        // );
-        // assertEquals("Animal species cannot be null or empty", exception.getMessage());
+
+         Long id = 1L;
+         String name = "Simba";
+         String species = null;
+         String breed = "African Lion";
+         LocalDate dateOfBirth = LocalDate.of(2020, 5, 15);
+         Double weight = 180.5;
+         String healthStatus = "Healthy";
+
+         IllegalArgumentException exception = assertThrows(
+             IllegalArgumentException.class,
+             () -> new Animal(id, name, species, breed, dateOfBirth, weight, healthStatus)
+         );
+         assertEquals("Animal species cannot be null or empty", exception.getMessage());
     }
 
     @Test
@@ -129,20 +128,19 @@ class AnimalTest {
         // 1. Create test data with weight = 0.0
         // 2. Use assertThrows to test that creating an Animal with zero weight throws IllegalArgumentException
         // 3. Verify the exception message is "Animal weight must be positive"
-        
-        // Your code here:
-        // Long id = 1L;
-        // String name = "Simba";
-        // String species = "Lion";
-        // String breed = "African Lion";
-        // LocalDate dateOfBirth = LocalDate.of(2020, 5, 15);
-        // Double weight = 0.0;
-        // String healthStatus = "Healthy";
-        //
-        // IllegalArgumentException exception = assertThrows(
-        //     IllegalArgumentException.class,
-        //     () -> new Animal(id, name, species, breed, dateOfBirth, weight, healthStatus)
-        // );
-        // assertEquals("Animal weight must be positive", exception.getMessage());
+
+         Long id = 1L;
+         String name = "Simba";
+         String species = "Lion";
+         String breed = "African Lion";
+         LocalDate dateOfBirth = LocalDate.of(2020, 5, 15);
+         Double weight = 0.0;
+         String healthStatus = "Healthy";
+
+         IllegalArgumentException exception = assertThrows(
+             IllegalArgumentException.class,
+             () -> new Animal(id, name, species, breed, dateOfBirth, weight, healthStatus)
+         );
+         assertEquals("Animal weight must be positive", exception.getMessage());
     }
 } 
